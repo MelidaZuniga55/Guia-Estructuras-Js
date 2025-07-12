@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Ejercicio 5 - Descuento de coches</title>
+</head>
+<body>
+  <h1>Ejercicio 5: Calcular Descuento de un Coche</h1>
+
+  <label for="modelo">Ingrese el modelo del coche:</label>
+  <input type="text" id="modelo" placeholder="Ej. FORD ESCAPE">
+  <button onclick="calcularDescuentoCoche()">Calcular descuento</button>
+
+  <div id="resultado"></div>
+
+  <script>
+    function calcularDescuentoCoche() {
+      // Obtener el valor del input
+      const modelo = document.getElementById("modelo").value.toUpperCase();
+      const precio = 20000;
+      let descuento = 0;
+
+      // Determinar el descuento según el modelo
+      switch (modelo) {
+        case "FORD FIESTA":
+          descuento = 0.05;
+          break;
+        case "FORD FOCUS":
+          descuento = 0.10;
+          break;
+        case "FORD ESCAPE":
+          descuento = 0.20;
+          break;
+        default:
+          document.getElementById("resultado").innerHTML = "<p>Modelo no reconocido.</p>";
+          return; // Terminar la función si el modelo es incorrecto
+      }
+
+      // Calcular descuento y precio final
+      const montoDescuento = precio * descuento;
+      const precioFinal = precio - montoDescuento;
+
+      // Mostrar los resultados en la página
+      document.getElementById("resultado").innerHTML = `
+        <h3>Resultado:</h3>
+        <p>Modelo: ${modelo}</p>
+        <p>Descuento aplicado: ${descuento * 100}%</p>
+        <p>Precio final: $${precioFinal.toFixed(2)}</p>
+      `;
+    }
+  </script>
+</body>
+</html>
