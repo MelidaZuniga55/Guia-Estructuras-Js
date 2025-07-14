@@ -8,7 +8,11 @@
   <h1>Ejercicio 5: Calcular Descuento de un Coche</h1>
 
   <label for="modelo">Ingrese el modelo del coche:</label>
-  <input type="text" id="modelo" placeholder="Ej. FORD ESCAPE">
+  <select id="modelo">
+    <option value="FORD FIESTA">FORD FIESTA</option>
+    <option value="FORD FOCUS">FORD FOCUS</option>
+    <option value="FORD ESCAPE">FORD ESCAPE</option>
+  </select>
   <button onclick="calcularDescuentoCoche()">Calcular descuento</button>
 
   <div id="resultado"></div>
