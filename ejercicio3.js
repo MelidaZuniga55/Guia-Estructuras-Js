@@ -19,4 +19,4 @@ function calcularAumento(nombre, salario, categoria) {
   console.log(`Aumento: $${aumento.toFixed(2)}`);
   console.log(`Nuevo salario: $${nuevoSalario.toFixed(2)}`);
 }
-calcularAumento("Carlos", 700, 'B');
+calcularAumento("Mario", 700, 'B');
