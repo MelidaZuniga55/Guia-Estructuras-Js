@@ -15,4 +15,4 @@ function descuentoViaje(origen, destino) {
     console.log("Ejercicio 6: Origen no válido para aplicar descuento.");
   }
 }
-descuentoViaje("Tunco", "la costa del sol");
+descuentoViaje("palma", "la costa del sol");
