@@ -14,4 +14,4 @@ function analizarValores(valores) {
   console.log("Múltiplos de 15:", multiplos15);
   console.log("Suma de pares:", sumaPares);
 }
-analizarValores([15, -2, 0, 30, 8, -9, 14, 3, 90, 7]);
+analizarValores([15, -2, 0, 30, 8, -9, 14, 4, 90, 7]);
