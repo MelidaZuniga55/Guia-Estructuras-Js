@@ -4,4 +4,4 @@ function tablaMultiplicar(numero) {
     console.log(`${numero} x ${i} = ${numero * i}`);
   }
 }
-tablaMultiplicar(9);
+tablaMultiplicar(8);
