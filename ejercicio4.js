@@ -7,4 +7,4 @@ function numeroMayor(num1, num2) {
     console.log("Ejercicio 4: Ambos números son iguales.");
   }
 }
-numeroMayor(15, 40);
+numeroMayor(15, 30);
