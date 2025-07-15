@@ -5,4 +5,4 @@ function calcularNotaFinal(nombre, carnet, examen, tareas, asistencia, investiga
   console.log(`Carnet: ${carnet}`);
   console.log(`Nota final: ${notaFinal.toFixed(2)}`);
 }
-calcularNotaFinal("Mélida Zuniga", "mz12345", 8.5, 9, 9.5, 8);
+calcularNotaFinal("Mélida Zuniga", "mz12345", 8.5, 10, 9.5, 8);
